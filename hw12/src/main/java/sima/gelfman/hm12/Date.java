@@ -249,13 +249,16 @@ public class Date {
      */
 
     public int dayInWeek() {
+        int y = _year;
+        int month = _month;
+
         if (_month < 3) {
-            _year--;
-            _month = _month + 12;
+            y--;
+            month += 12;
         }
-        int y = _year % 100;
-        int c = _year / 100;
-        return (_day + (26 * (_month + 1)) / 10 + y + y / 4 + c / 4 - 2 * c) % 7;
+        int c = y / 100;
+        y = y % 100;
+        return ((_day + (26 * (month + 1)) / 10 + y + y / 4 + c / 4 - 2 * c) % 7 + 7) % 7;
     }
 
 

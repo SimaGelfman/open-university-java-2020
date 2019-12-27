@@ -25,4 +25,7 @@ public class Arrays {
     public static int findIndexOf(int[] arr, int val){
         return 1;
     }
+
+
+
 }

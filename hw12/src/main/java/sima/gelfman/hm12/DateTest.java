@@ -48,31 +48,43 @@ public class DateTest {
 
 
         {
-            Date d1 = new Date (12, 1 , 2019);
+            Date d1 = new Date(12, 1, 2019);
             System.out.println("The day in a week should be 0: " + d1.dayInWeek());
         }
 
         {
-            Date d1 = new Date (12, 2 , 2019);
+            Date d1 = new Date(12, 2, 2019);
             System.out.println("The day in a week should be 3: " + d1.dayInWeek());
         }
 
         {
-            Date d1 = new Date (29, 3 , 2019);
+            Date d1 = new Date(29, 3, 2019);
             System.out.println("The day in a week should be 6: " + d1.dayInWeek());
         }
 
         {
-            Date d1 = new Date (29, 2 , 2000);
+            Date d1 = new Date(29, 2, 2000);
             System.out.println("The day in a week should be 3: " + d1.dayInWeek());
         }
 
 
         {
-            Date d1 = new Date (29, 2 , 1900);
+            Date d1 = new Date(29, 2, 1900);
             System.out.println(d1.toString());
             System.out.println("The day in a week should be 0: " + d1.dayInWeek());
 
+        }
+
+        {
+            Date d1 = new Date(15, 1, 2009);
+            System.out.println(d1.toString());
+            System.out.println("The day in a week should be 5: " + d1.dayInWeek());
+        }
+
+        {
+            Date d1 = new Date(1, 3, 2018);
+            System.out.println(d1.toString());
+            System.out.println("The day in a week should be 5: " + d1.dayInWeek());
         }
 
 
